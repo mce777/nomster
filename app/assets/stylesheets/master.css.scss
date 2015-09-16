@@ -1,3 +1,17 @@
+body {
+  background: url('/assets/squairy_light.png');
+ /* Trebuchet-based sans serif stack */
+ font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+}
+
+/* BG for the NAVBAR */
+.navbar.navbar-inverse {
+  background:url('/assets/binding_dark.png');
+  border-radius: 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4)
+}
+
 .booyah-box {
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;

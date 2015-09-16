@@ -9,7 +9,9 @@ body {
 .navbar.navbar-inverse {
   background:url('/assets/binding_dark.png');
   border-radius: 0;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.4)
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 .booyah-box {

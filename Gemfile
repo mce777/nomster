@@ -35,6 +35,12 @@ end
 # adding bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# firehose pagination
+gem 'will_paginate', '~> 3.0.5'
+
+# firehose simple form
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

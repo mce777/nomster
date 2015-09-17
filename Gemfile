@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -33,13 +33,15 @@ group :doc do
 end
 
 # adding bootstrap
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '3.3.5.1'
 
 # firehose pagination
 gem 'will_paginate', '~> 3.0.5'
 
 # firehose simple form
 gem 'simple_form'
+
+gem 'sprockets', '2.11.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

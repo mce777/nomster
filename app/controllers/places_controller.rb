@@ -11,13 +11,16 @@ class PlacesController < ApplicationController
 	end
 
   def create
-    Place.create(place_params)
+    # the RESULT of the place_params goes below in the ()
+    Place.create(place_params())
     redirect_to root_path
   end
 
   private
 
   def place_params
+  	# "return" below is 'iplicit' says Travis
+  	# so "return params.require...etc" would also be cool
     params.require(:place).permit(:name, :description, :address)
   end
 end

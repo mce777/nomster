@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+	before_action :authenticate_user!, :only => [:new, :create]
+
 	def index
 		# @places is an instance variable telling model to list every record in db
 		
@@ -12,7 +14,8 @@ class PlacesController < ApplicationController
 
   def create
     # the RESULT of the place_params goes below in the ()
-    Place.create(place_params())
+    # Place.create(place_params())
+    current_user.places.create(place_params)
     redirect_to root_path
   end
 

@@ -8,5 +8,7 @@ class Place < ActiveRecord::Base
 	  
 	  # no brackets or parenthesis needed on above line (fucks shit up)
 	  # check out 'sexy validation' in lesson 28 maybe
+
+	  has_many :comments
 end
 

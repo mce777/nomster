@@ -99,7 +99,6 @@ function initMap() {
 
 
 <div class="col-xs-10 col-xs-offset-1">
-<h1 class="pull-left">Comments</h1>
 <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
   Add a comment
@@ -110,6 +109,10 @@ function initMap() {
 </div>
 
 <div class="clear"></div>
+
+<div class="col-xs-10 col-xs-offset-1">
+<h1 class="pull-left">Comments</h1>
+</div>
 
 <!--comments being displayed-->
 <% @place.comments.each do |comment| %>
@@ -128,6 +131,10 @@ function initMap() {
 
 <!--photos being displayed -->
 <div class="col-xs-10 col-xs-offset-1">
+<h1 class="pull-left">Photos</h1>
+
+<div class="clear"></div><br />
+
 <% @place.photos.each do |photo| %>
   <%= image_tag photo.picture, :class => 'img-responsive' %><br />
   <%= photo.caption %>

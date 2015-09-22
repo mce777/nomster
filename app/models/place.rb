@@ -10,5 +10,6 @@ class Place < ActiveRecord::Base
 	  # check out 'sexy validation' in lesson 28 maybe
 
 	  has_many :comments
+	  has_many :photos
 end
 

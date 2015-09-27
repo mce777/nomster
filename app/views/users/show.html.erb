@@ -17,9 +17,20 @@
 <br /><br />
 <h1 class="text-center">My Comments</h1>
 <br /><br />
-<% @user.comments.each do |comment| %>
+<!--<% @user.comments.each do |comment| %>-->
+    <!-- crash fix was originally here, moved to controller cuz that's better-->
+
+    <!--<% if comment.place.nil? %>
+    	<% comment.destroy %>
+    	<% next %>
+    <% end %>-->
+
     <div class="col-xs-12 col-sm-6">
-    <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>	
+    <h2 class="text-center">
+    	
+    	<%= link_to comment.place.name, place_path(comment.place) %>
+    	
+    </h2>	
     <blockquote>
       <% if comment.humanized_rating.present? %>
         <b><%= comment.humanized_rating %></b> -
@@ -28,7 +39,7 @@
       <small><%= comment.user.email %></small>
     </blockquote>
   </div>
-<% end %>
+<!--<% end %> original loop ended here-->
 
 <div class="clear"></div>
 <br /><br />

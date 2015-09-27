@@ -9,7 +9,10 @@ class Place < ActiveRecord::Base
 	  # no brackets or parenthesis needed on above line (fucks shit up)
 	  # check out 'sexy validation' in lesson 28 maybe
 
-	  has_many :comments
+	  has_many :comments #, :dependent => :destroy
 	  has_many :photos
 end
 
+# :dependent => :destroy doesn't work
+# would fix FUTURE crashes AFTER delting the placeless comment
+# but NOT if the crash once it has occured
